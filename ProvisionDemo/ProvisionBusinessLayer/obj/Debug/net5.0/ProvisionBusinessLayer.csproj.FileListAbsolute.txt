@@ -1,0 +1,15 @@
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ProvisionBusinessLayer.deps.json
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ProvisionBusinessLayer.dll
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ref\ProvisionBusinessLayer.dll
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ProvisionBusinessLayer.pdb
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.AssemblyInfoInputs.cache
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.AssemblyInfo.cs
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.dll
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ref\ProvisionBusinessLayer.dll
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.pdb
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ProvisionDataLayer.dll
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\bin\Debug\net5.0\ProvisionDataLayer.pdb
+C:\Users\kadirari\Desktop\provision\ProvisionDemo\ProvisionBusinessLayer\obj\Debug\net5.0\ProvisionBusinessLayer.csproj.CopyComplete
