@@ -10,13 +10,17 @@ namespace ProvisionDataLayer.Context
 {
     public class SystemContext : DbContext
     {
-        public SystemContext(DbContextOptions<SystemContext> options):base(options)
+        public SystemContext()
         {
-
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        public SystemContext(DbContextOptions<SystemContext> options)
+            : base(options)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SystemContext).Assembly);
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql(Environment.GetEnvironmentVariable("DB_CONNECTION"), b => b.MigrationsAssembly("ProvisionDataLayer"));
         }
 
         public DbSet<CurrencyCode> CurrencyCodes{ get; set; }

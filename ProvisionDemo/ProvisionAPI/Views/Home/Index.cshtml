@@ -20,6 +20,12 @@
         </div>
         <br />
         <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button id="dataUpdate" class="btn btn-outline-primary" type="button">Update Data in DB</button>
+            </div>
+            <div class="input-group-prepend">
+                <button id="codeUpdate" class="btn btn-outline-primary" type="button">Update Currency Code in DB</button>
+            </div>
             <select class="form-control" aria-label="Currency Code" id="srcText">
                 @foreach (var item in Model)
                 {
@@ -27,13 +33,7 @@
                 }
             </select>
             <div class="input-group-append">
-                <button id="dataUpdate" class="btn btn-outline-secondary" type="button">Update Data in DB</button>
-            </div>
-            <div class="input-group-append">
-                <button id="searchButton" class="btn btn-outline-secondary" type="button">Search</button>
-            </div>
-            <div class="input-group-append">
-                <button id="codeUpdate" class="btn btn-outline-secondary" type="button">Update Currency Code in DB</button>
+                <button id="searchButton" class="btn btn-outline-primary" type="button">Search in Database</button>
             </div>
         </div>
 

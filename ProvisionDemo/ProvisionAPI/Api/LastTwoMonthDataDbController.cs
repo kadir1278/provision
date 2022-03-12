@@ -14,22 +14,16 @@ namespace ProvisionAPI.Api
     [ApiController]
     public class LastTwoMonthDataDbController : ControllerBase
     {
-        private readonly SystemContext db;
-
-        public LastTwoMonthDataDbController(SystemContext db)
-        {
-            this.db = db;
-        }
         [HttpPost("add/{code}")]
         public IActionResult LastTwoMonthDataDb(string code)
         {
-            string msg = TcmbDataService.Add(db, code);
+            string msg = TcmbDataService.Add(code);
             return Ok(msg);
         }
-        [HttpGet("list")]
+        [HttpGet("list/{code}")]
         public List<TCMBViewModel> LastTwoMonthDataList(string code)
         {
-            return TcmbDataService.List(db, code);
+            return TcmbDataService.List(code);
         }
     }
 }

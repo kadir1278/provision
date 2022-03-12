@@ -26,13 +26,13 @@ namespace ProvisionAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddDbContext<SystemContext>
-            //    (options => options.UseNpgsql(Environment.GetEnvironmentVariable("DB_CONNECTION"),
-            //    b => b.MigrationsAssembly("ProvisionDataLayer")));
-
             services.AddDbContext<SystemContext>
-               (options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
-               b => b.MigrationsAssembly("ProvisionDataLayer")));
+                (options => options.UseNpgsql(Environment.GetEnvironmentVariable("DB_CONNECTION"),
+                b => b.MigrationsAssembly("ProvisionDataLayer")));
+
+            //services.AddDbContext<SystemContext>
+            //   (options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
+            //   b => b.MigrationsAssembly("ProvisionDataLayer")));
 
             services.AddScoped<DbContext>(provider => provider.GetService<SystemContext>());
             services.AddControllers();

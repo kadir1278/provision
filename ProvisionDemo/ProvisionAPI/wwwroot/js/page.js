@@ -2,8 +2,7 @@
     var text = document.getElementById("srcText").value;
     $("#graph").html('');
     $.ajax({
-        url: "/api/LastTwoMonthDataDb/list",
-        data: { code: text },
+        url: "/api/LastTwoMonthDataDb/list/" + text,
         type: "GET",
         success: function (data) {
             DrawGraphic(data);

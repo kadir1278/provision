@@ -12,25 +12,17 @@ namespace ProvisionAPI.Api
     [ApiController]
     public class CurrencyCodeDbController : Controller
     {
-        private readonly SystemContext db;
-
-        public CurrencyCodeDbController(SystemContext db)
-        {
-            this.db = db;
-        }
         [HttpPost("add")]
         public IActionResult CurrencyCodeDb()
         {
-            string msg = CurrencyCodeService.Add(db);
-            return Ok(msg);
+            return Ok(CurrencyCodeService.Add());
         }
 
 
         [HttpGet("list")]
         public List<CurrencyCode> LastTwoMonthDataList()
         {
-            var list = db.CurrencyCodes.ToList();
-            return list;
+            return CurrencyCodeService.List();
         }
     }
 }
