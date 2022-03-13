@@ -135,6 +135,5 @@
         // Append Y Axis to the graph
         svg.append("g")
             .call(d3.axisLeft(y));
-
     }
 }

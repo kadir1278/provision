@@ -1,12 +1,12 @@
 ﻿.line {
     fill: none;
-    stroke: #007fd6;
+    stroke: lightblue;
     stroke-width: 4px;
 }
 
 .node {
     fill: #007fd6;
-    stroke: #fff;
+    stroke: blue;
     stroke-width: 2px;
 }
 

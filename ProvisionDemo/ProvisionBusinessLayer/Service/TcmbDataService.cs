@@ -79,6 +79,10 @@ namespace ProvisionBusinessLayer.Service
         {
             using (var db = new SystemContext())
             {
+                if (db.TcmbDatas.Where(x=>x.Code==code).Count()==0)
+                {
+                    Add(code);
+                }
                 List<TCMBViewModel> listModel = new List<TCMBViewModel>();
                 DateTime zaman = DateTime.Now.AddMonths(-2);
                 var list = db.TcmbDatas.Where(x => x.Code == code && x.Date > zaman).ToList();
