@@ -43,6 +43,10 @@ namespace ProvisionBusinessLayer.Service
         {
             using (var db=new SystemContext())
             {
+                if (db.CurrencyCodes.Count()==0)
+                {
+                    Add();
+                }
                 var list = db.CurrencyCodes.ToList();
                 return list;
             }

@@ -68,7 +68,8 @@ namespace ProvisionBusinessLayer.Service
                     }
                     catch (Exception ex)
                     {
-                        int errorMsg = i;
+                        int errorMsgFor = i;
+                        string exMsg = ex.Message;
                     }
                 }
                 return ("Geçmiş İki Aylık Veri Çekildi");
